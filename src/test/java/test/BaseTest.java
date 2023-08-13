@@ -48,18 +48,12 @@ public class BaseTest {
     }
 	@BeforeMethod
 	public static void openUrl() {
-<<<<<<< HEAD
+
 //		System.setProperty(prop.getProperty("chromeDriverProperty"),prop.getProperty("chromeDriverPath") );
 //		ChromeOptions options = new ChromeOptions();
 //		options.addArguments("headless");
 		System.setProperty("webdriver.edge.driver","C:\\Users\\viveksharma11\\Downloads\\DevTestOps\\DevTestOps\\driver\\msedgedriver.exe");
-		driver = new EdgeDriver();
-=======
-		System.setProperty(prop.getProperty("chromeDriverProperty"),prop.getProperty("chromeDriverPath") );
-		ChromeOptions options = new ChromeOptions();
-              options.addArguments("headless");
-		 driver = new ChromeDriver();
->>>>>>> 57de34178ec4695e205a5484b4c194855b507f53
+		driver = new EdgeDriver();	
 		 driver.get("http://amazon.in/"); 
 		
 	}
